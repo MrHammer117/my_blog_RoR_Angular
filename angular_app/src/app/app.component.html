@@ -1,0 +1,20 @@
+<header>
+  <h1>BLOG</h1>
+  <p>Adrian Humphrey</p>
+</header>
+
+<main>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  <article *ngFor="let post of posts">
+    <h2>{{ post.pheading }}</h2>
+    <h3>{{ post.psubheading }}</h3>
+
+    <p>
+      By {{ post.pauthor }} |
+      {{ post.pdateposted | date:'mediumDate' }}
+    </p>
+
+    <p>{{ post.pcontent }}</p>
+  </article>
+</main>

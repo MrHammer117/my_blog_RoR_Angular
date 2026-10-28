@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #ff8c00;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 24px;
+  text-align: center;
+  background-color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+article {
+  margin-bottom: 24px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+article h2 {
+  margin-top: 0;
+}

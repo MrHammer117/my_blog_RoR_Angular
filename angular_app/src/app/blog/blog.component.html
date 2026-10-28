@@ -1,0 +1,59 @@
+<h1>My Blog</h1>
+
+<p>Post count: {{ posts.length }}</p>
+
+<div *ngFor="let post of posts">
+  <h2>{{ post.pheading }}</h2>
+  <h3>{{ post.psubheading }}</h3>
+  <p>Author: {{ post.pauthor }}</p>
+</div>
+
+<!--
+<div class="blog">
+  <header class="blog-header">
+    <h1>My Blog</h1>
+    <p>Stories, thoughts, and updates</p>
+  </header>
+  -->
+
+<!-- Loading state 
+  <p *ngIf="loading" class="status-message">
+    Loading posts...
+  </p>
+-->
+<!-- Error state 
+  <p *ngIf="!loading && error" class="error-message">
+    {{ error }}
+  </p>
+-->
+<!-- Posts 
+  <main *ngIf="!loading && !error" class="posts-container">
+
+    <p *ngIf="posts.length === 0">
+      No posts found.
+    </p>
+
+    <article *ngFor="let post of posts" class="post">
+
+      <h2>{{ post.pheading }}</h2>
+
+      <h3 *ngIf="post.psubheading">
+        {{ post.psubheading }}
+      </h3>
+
+      <p class="post-meta">
+        By {{ post.pauthor }}
+      </p>
+
+      <p class="post-date" *ngIf="post.pdateposted">
+        Posted on {{ post.pdateposted | date:'longDate' }}
+      </p>
+
+      <div class="post-content">
+        {{ post.pcontent }}
+      </div>
+
+    </article>
+  </main>
+</div>
+-->
